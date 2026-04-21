@@ -22,7 +22,7 @@
 ---
 
 ## 1. 실험 환경 및 단계별 도전 과제 (3 Stages)
-| 단계 | 모델 | 데이터셋 | Task | 도전 과제 |
+| 단계 | 모델 | 데이터셋 | 작업 유형 | 도전 과제 |
 | :---: | :--- | :--- | :--- | :--- |
 | **Stage 1 (🥉)** | **FCN8s** | Flood Area Segmentation | Binary Segmentation | VGG16 기반 Skip Connection 직접 구현, 마스크 Binary화 및 데이터 전처리 |
 | **Stage 2 (🥈)** | **U-Net (Custom)** | Car Segmentation (5 classes) | Multi-class Segmentation | Encoder-Decoder 구조 직접 설계, Concat 기반 Skip Connection, mIoU 계산 로직 구현 |
