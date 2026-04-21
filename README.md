@@ -13,7 +13,7 @@
 ---
 
 ## 🎯 핵심 목표 (Motivation)
-| 핵심 역량 | 적용 단계 &emsp;&emsp;&emsp;&emsp;| 상세 목표 및 엔지니어링 포인트 |
+| 핵심 역량 | 적용 단계 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 상세 목표 및 엔지니어링 포인트 |
 | :--- | :---: | :--- |
 | **논문 구현 능력<br>(Paper Implementation)** | **Stage 1. FCN** | VGG16 Backbone + Skip Connection 구조를 논문 스펙대로 직접 구현하여 이진 세그멘테이션 수행 |
 | **아키텍처 설계 능력<br>(Architecture Design)** | **Stage 2. U-Net** | Encoder-Decoder + Concat 기반 Skip Connection을 밑바닥부터 설계하여 다중 클래스 세그멘테이션으로 확장 |
