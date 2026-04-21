@@ -154,16 +154,6 @@ Decoder:  1024→512(+cat e4)→256(+cat e3)→128(+cat e2)→64(+cat e1)→num_
 
 ---
 
-## 5. 향후 과제 (Future Work)
-현재 세 모델은 모두 **224×224 고정 해상도**와 **정적 데이터셋** 환경에서 학습되었습니다. 실무 적용을 위해 다음 방향으로 확장할 계획입니다.
-
-- **Data Augmentation 강화**: `albumentations` 라이브러리를 활용한 Flip, Rotate, ElasticTransform 등 세그멘테이션 특화 증강 적용
-- **더 큰 Backbone 실험**: ResNet50, EfficientNet 기반으로 Backbone을 교체하여 성능 상한선 탐색
-- **실시간 추론 최적화**: TorchScript 또는 ONNX 변환을 통한 경량화 및 추론 속도 개선
-- **Instance Segmentation으로 확장**: Semantic → Instance 세그멘테이션(Mask R-CNN)으로 발전하여 개별 객체 식별 능력 검증
-
----
-
 ## 💡 회고록 (Retrospective)
 이번 프로젝트에서는 세그멘테이션을 단순히 라이브러리 API 호출 수준으로 익히는 것이 아닌, 논문의 수식과 그림을 코드로 직접 옮기는 구현 능력과, 그 구조가 왜 그렇게 설계되었는지를 이해하는 통찰력을 함께 키우는 데 집중했습니다.
 
