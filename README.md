@@ -43,8 +43,11 @@
     │   ├── smp_loss.png             # Stage 3: Train/Val Loss 곡선
     │   ├── smp_iou_dice.png         # Stage 3: mIoU + Dice 곡선
     │   └── smp_pa.png               # Stage 3: Pixel Accuracy 곡선
-    └── README.md
-
+    ├── .gitignore                   # 불필요한 파일 업로드 방지
+    ├── LICENSE                      # MIT License (AD-Styles)
+    ├── README.md                    # 프로젝트 리포트
+    └── requirements.txt             # 라이브러리 설치 목록
+  
 ---
 
 ## 3. 모델 아키텍처 상세 (Architecture Details)
