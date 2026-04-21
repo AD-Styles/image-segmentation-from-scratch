@@ -5,15 +5,13 @@ Stage 1 : FCN8s        — Flood Area Binary Segmentation
 Stage 2 : U-Net Custom — Car Multi-class Segmentation
 Stage 3 : SMP U-Net    — Car Multi-class Segmentation (Library)
 
-실행 전 데이터 경로를 본인 환경에 맞게 수정하세요.
-  FLOOD_IMAGE_DIR / FLOOD_MASK_DIR  → Stage 1 데이터
-  CAR_IMAGE_DIR                     → Stage 2, 3 데이터
-
-학습 완료 후 results/ 폴더에 9개의 그래프 이미지가 자동 저장됩니다.
+학습 완료 후 results/ 폴더에 9개의 그래프 이미지가 자동 저장.
   fcn_loss.png  / fcn_iou.png       / fcn_pa.png
   unet_loss.png / unet_iou.png      / unet_pa.png
   smp_loss.png  / smp_iou_dice.png  / smp_pa.png
 """
+
+# !pip install segmentation-models-pytorch -q
 
 import os
 import numpy as np
@@ -46,7 +44,7 @@ FLOOD_MASK_DIR  = "/kaggle/input/datasets/faizalkarim/flood-area-segmentation/Ma
 CAR_IMAGE_DIR   = "/kaggle/input/datasets/intelecai/car-segmentation/car-segmentation/images/*"
 CAR_CLASSES_TXT = "/kaggle/input/datasets/intelecai/car-segmentation/car-segmentation/classes.txt"
 
-RESULTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results")
+RESULTS_DIR = "/kaggle/working/results"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 BATCH_SIZE  = 16
@@ -58,6 +56,9 @@ SMP_EPOCHS  = 15
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"[Device] {device}")
+if torch.cuda.is_available():
+    print(f"[GPU] {torch.cuda.get_device_name(0)}")
+
 
 
 # ─────────────────────────────────────────────
