@@ -1,0 +1,9 @@
+# Image Segmentation from Scratch - Dependencies
+
+numpy>=1.23.5
+tqdm>=4.65.0
+matplotlib>=3.7.1
+Pillow>=9.4.0
+torch==2.0.0
+torchvision>=0.15.1
+segmentation-models-pytorch==0.3.3
