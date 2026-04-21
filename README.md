@@ -140,7 +140,7 @@ Decoder:  1024→512(+cat e4)→256(+cat e3)→128(+cat e2)→64(+cat e1)→num_
 | ![loss](results/unet_loss.png) | ![iou](results/unet_iou.png) | ![pa](results/unet_pa.png) |
 
 - **최종 성능**: Val Loss `0.54` / Val mIoU `0.28` / Val Pixel Accuracy `0.80`
-- **엔지니어링 인사이트**: mIoU가 0.28로 상대적으로 낮게 나타난 것은 모델 한계가 아닌 **데이터셋 한계(211장, 5 classes)**에 기인합니다. 주목할 점은 15 Epoch 시점에도 mIoU가 지속 상승 중이었다는 것으로, Epoch을 늘리면 추가 개선 여지가 있음을 확인했습니다. FCN 대비 Concat 기반 Skip Connection이 차량 부품처럼 경계가 복잡한 영역에서 공간 정보를 더 정밀하게 복원함을 곡선 패턴을 통해 확인했습니다.
+- **엔지니어링 인사이트**: mIoU가 0.28로 상대적으로 낮게 나타난 것은 모델 한계가 아닌 **데이터셋 한계(211장, 5 classes)** 에 기인합니다. 주목할 점은 15 Epoch 시점에도 mIoU가 지속 상승 중이었다는 것으로, Epoch을 늘리면 추가 개선 여지가 있음을 확인했습니다. FCN 대비 Concat 기반 Skip Connection이 차량 부품처럼 경계가 복잡한 영역에서 공간 정보를 더 정밀하게 복원함을 곡선 패턴을 통해 확인했습니다.
 
 ---
 
