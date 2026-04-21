@@ -125,7 +125,7 @@ Decoder:  1024→512(+cat e4)→256(+cat e3)→128(+cat e2)→64(+cat e1)→num_
 ---
 
 ### 📈 Stage 1. FCN8s — Flood Area Binary Segmentation
-| 학습 손실 (Train/Val Loss) | IoU 곡선 &emsp;&emsp;&emsp; | Pixel Accuracy 곡선 |
+| 학습 손실 (Train/Val Loss) | IoU 곡선 | Pixel Accuracy 곡선 |
 | :---: | :---: | :---: |
 | ![loss](results/fcn_loss.png) | ![iou](results/fcn_iou.png) | ![pa](results/fcn_pa.png) |
 
@@ -135,7 +135,7 @@ Decoder:  1024→512(+cat e4)→256(+cat e3)→128(+cat e2)→64(+cat e1)→num_
 ---
 
 ### 📈 Stage 2. U-Net — Car Multi-class Segmentation (Custom)
-| 학습 손실 (Train/Val Loss) | mIoU 곡선 &emsp; | Pixel Accuracy 곡선 |
+| 학습 손실 (Train/Val Loss) | mIoU 곡선 | Pixel Accuracy 곡선 |
 | :---: | :---: | :---: |
 | ![loss](results/unet_loss.png) | ![iou](results/unet_iou.png) | ![pa](results/unet_pa.png) |
 
@@ -145,7 +145,7 @@ Decoder:  1024→512(+cat e4)→256(+cat e3)→128(+cat e2)→64(+cat e1)→num_
 ---
 
 ### 📈 Stage 3. SMP U-Net — Car Multi-class Segmentation (Library)
-| 학습 손실 (Train/Val Loss) | mIoU / Dice 곡선 &emsp; | Pixel Accuracy 곡선 |
+| 학습 손실 (Train/Val Loss) | mIoU / Dice 곡선 | Pixel Accuracy 곡선 |
 | :---: | :---: | :---: |
 | ![loss](results/smp_loss.png) | ![iou](results/smp_iou_dice.png) | ![pa](results/smp_pa.png) |
 
