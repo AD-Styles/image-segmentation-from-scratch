@@ -125,7 +125,7 @@ Decoder:  1024→512(+cat e4)→256(+cat e3)→128(+cat e2)→64(+cat e1)→num_
 ---
 
 ### 📈 Stage 1. FCN8s — Flood Area Binary Segmentation
-| 학습 손실 (Train/Val Loss) | IoU 곡선 &emsp; | Pixel Accuracy 곡선 |
+| 학습 손실 (Train/Val Loss) | IoU 곡선 &emsp;&emsp; | Pixel Accuracy 곡선 |
 | :---: | :---: | :---: |
 | ![loss](results/fcn_loss.png) | ![iou](results/fcn_iou.png) | ![pa](results/fcn_pa.png) |
 
